@@ -23,20 +23,37 @@ const blog = (await getCollection("blog"))
     <div class="space-y-16">
       <section>
         <article class="space-y-4">
-          {/* TODO: replace this placeholder bio with your own intro. */}
           <p class="animate">
-            Welcome to my corner of the web. This is where I write about the
-            things I'm building, learning, and thinking about.
+            I'm a software engineer and individual systems researcher. My work
+            spans two ends of the systems spectrum: pure distributed software,
+            and the boundary where software meets hardware.
           </p>
           <p class="animate">
-            I'm interested in <span class="text-black dark:text-white">/* TODO: your fields/interests */</span>.
-            When I'm not working, I'm usually <span class="text-black dark:text-white">/* TODO: hobbies */</span>.
+            On the software side, I work on Pathways and Plaque &mdash;
+            Google's distributed dataflow system for ML and the sharded runtime
+            it's built on. Before that, I was the owner of a custom streaming
+            data-processing system that operated at Google cloud scale while
+            guaranteeing strong consistency at low latency.
           </p>
           <p class="animate">
-            Take a look at my latest posts below, or find me on
-            <Link href="https://github.com/hetong07" aria-label="Tong He on GitHub" external>
-              GitHub
-            </Link>.
+            At the hardware boundary, I worked on
+            <Link href="https://www.usenix.org/conference/atc19/presentation/ruan" aria-label="INSIDER paper at USENIX ATC 2019" external>
+              INSIDER
+            </Link>,
+            an in-storage computing platform, and
+            <Link href="https://ieeexplore.ieee.org/document/8457626" aria-label="ST-Accel paper on IEEE Xplore" external>
+              ST-Accel
+            </Link>
+            for FPGA streaming, and earlier worked on ClickNP at Microsoft
+            Research &mdash; part of the Catapult effort to bring FPGAs into the
+            datacenter.
+          </p>
+          <p class="animate">
+            These days, I'm focused on
+            <span class="text-black dark:text-white">scaling LLM pre-training systems</span>
+            &mdash; and just as curious about the payoff: turning raw capability
+            into applications that matter. This is where I write about what I'm
+            building and thinking about.
           </p>
         </article>
       </section>

@@ -10,7 +10,7 @@ export const SITE: Site = {
 
 export const HOME: Metadata = {
   TITLE: "Home",
-  DESCRIPTION: "Personal homepage and blog of Tong He.", // TODO: confirm tagline
+  DESCRIPTION: "Tong He — software engineer at Google working on large-scale pretraining systems and scaling LLM training, with a background in distributed systems and software–hardware co-design.",
 };
 
 export const BLOG: Metadata = {
@@ -33,9 +33,8 @@ export const SOCIALS: Socials = [
     NAME: "github",
     HREF: "https://github.com/hetong07",
   },
-  // TODO: add/remove socials as you like (twitter-x, linkedin, etc.)
-  // {
-  //   NAME: "linkedin",
-  //   HREF: "https://www.linkedin.com/in/<your-handle>",
-  // },
+  {
+    NAME: "linkedin",
+    HREF: "https://www.linkedin.com/in/tong-he-931bb7b6/",
+  },
 ];
