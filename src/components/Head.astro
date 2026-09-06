@@ -20,7 +20,7 @@ interface Props {
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = "/nano.png" } = Astro.props;
+const { title, description, image = "/astro-nano.png" } = Astro.props;
 ---
 
 <!-- Global Metadata -->
@@ -105,13 +105,18 @@ const { title, description, image = "/nano.png" } = Astro.props;
       toggleTheme(window.matchMedia("(prefers-color-scheme: dark)").matches);
     });
 
-    window.matchMedia("(prefers-color-scheme: dark)")
-      .addEventListener("change", event => {
-        if (localStorage.theme === "system" || !localStorage.theme) {
-          toggleTheme(event.matches);
+    // Register the system-theme listener only once, even though init()
+    // runs again after every view transition (astro:after-swap).
+    if (!window.__themeListenerAdded) {
+      window.__themeListenerAdded = true;
+      window.matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", event => {
+          if (localStorage.theme === "system" || !localStorage.theme) {
+            toggleTheme(event.matches);
+          }
         }
-      }
-    );
+      );
+    }
 
     document.addEventListener("scroll", onScroll);
   }
@@ -136,9 +141,10 @@ const { title, description, image = "/nano.png" } = Astro.props;
 
   function scrollToTop(event) {
     event.preventDefault();
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: reduceMotion ? "auto" : "smooth"
     });
   }
 
@@ -179,6 +185,10 @@ function toggleTheme(dark) {
       toggleTheme(window.matchMedia("(prefers-color-scheme: dark)").matches);
     }
   }
+
+  // Mark that JS is available so .animate elements start hidden (and animate in).
+  // Without JS, content stays visible via the .js-scoped CSS rules.
+  document.documentElement.classList.add("js");
 
   document.addEventListener("DOMContentLoaded", () => init());
   document.addEventListener("astro:after-swap", () => init());

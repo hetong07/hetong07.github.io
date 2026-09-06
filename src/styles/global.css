@@ -20,7 +20,7 @@ body {
   @apply font-sans antialiased;
   @apply flex flex-col;
   @apply bg-stone-100 dark:bg-stone-900;
-  @apply text-black/50 dark:text-white/75;
+  @apply text-black/70 dark:text-white/75;
 }
 
 header {
@@ -55,13 +55,23 @@ article {
   }
 }
 
-.animate {
+/* Progressive enhancement: only hide-for-animation when JS is available,
+   so content is visible if JS fails or is disabled. */
+.js .animate {
   @apply opacity-0 translate-y-3;
   @apply transition-all duration-700 ease-out;
 }
 
-.animate.show {
+.js .animate.show {
   @apply opacity-100 translate-y-0;
+}
+
+/* Respect users who prefer reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  .js .animate {
+    @apply opacity-100 translate-y-0;
+    transition: none !important;
+  }
 }
 
 html #back-to-top {

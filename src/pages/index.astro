@@ -32,42 +32,35 @@ const work = await Promise.all(
 
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
   <Container>
-    <h4 class="animate font-semibold text-black dark:text-white">
-      Hi, I'm Nano <span class="text-xl">👋🏻</span> 
-    </h4>
+    <h1 class="animate font-semibold text-black dark:text-white">
+      Hi, I'm Tong <span class="text-xl">👋🏻</span>
+    </h1>
     <div class="space-y-16">
       <section>
         <article class="space-y-4">
+          {/* TODO: replace this placeholder bio with your own intro. */}
           <p class="animate">
-            I am a minimal, seo friendly, accessible portfolio and blog for developers. 
-            I am an even more lightweight version of my popular theme
-            <Link href="https://github.com/markhorn-dev/astro-sphere" aria-label="Astro Sphere on Github" external>
-              Astro Sphere
+            Welcome to my corner of the web. This is where I write about the
+            things I'm building, learning, and thinking about.
+          </p>
+          <p class="animate">
+            I'm interested in <span class="text-black dark:text-white">/* TODO: your fields/interests */</span>.
+            When I'm not working, I'm usually <span class="text-black dark:text-white">/* TODO: hobbies */</span>.
+          </p>
+          <p class="animate">
+            Take a look at my latest posts below, or find me on
+            <Link href="https://github.com/hetong07" aria-label="Tong He on GitHub" external>
+              GitHub
             </Link>.
-            I have a lighthouse scores of 100 across the board for performance, 
-            accesibility, best practices and SEO.
-          </p>
-          <p class="animate">
-            I come packed with full type safety, a sitemap, an rss feed, markdown 
-            and mdx support (use components in your markdown) through astro integrations.
-            I am styled with tailwind and come preconfigured with light, dark and 
-            system/os theme preferences out of the box.
-          </p>
-          <p class="animate">
-            Visit
-            <Link href="https://github.com/markhorn-dev/astro-nano" aria-label="Astro Nano on Github" external>
-              Astro Nano on Github
-            </Link>
-            to fork the repository, read the docs or one-click deploy on Vercel or Netlify. 
           </p>
         </article>
       </section>
 
       <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
-          <h5 class="font-semibold text-black dark:text-white">
+          <h2 class="font-semibold text-black dark:text-white">
             Latest posts
-          </h5>
+          </h2>
           <Link href="/blog">
             See all posts
           </Link>
@@ -83,9 +76,9 @@ const work = await Promise.all(
 
       <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
-          <h5 class="font-semibold text-black dark:text-white">
+          <h2 class="font-semibold text-black dark:text-white">
             Work Experience
-          </h5>
+          </h2>
           <Link href="/work">
             See all work
           </Link>
@@ -112,9 +105,9 @@ const work = await Promise.all(
 
       <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
-          <h5 class="font-semibold text-black dark:text-white">
+          <h2 class="font-semibold text-black dark:text-white">
             Recent projects
-          </h5>
+          </h2>
           <Link href="/projects">
             See all projects
           </Link>
@@ -129,9 +122,9 @@ const work = await Promise.all(
       </section>
 
       <section class="animate space-y-4">
-        <h5 class="font-semibold text-black dark:text-white">
+        <h2 class="font-semibold text-black dark:text-white">
           Let's Connect
-        </h5>
+        </h2>
         <article>
           <p>
             If you want to get in touch with me about something or just to say hi,
