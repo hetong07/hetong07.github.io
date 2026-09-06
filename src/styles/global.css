@@ -75,9 +75,9 @@ article {
 }
 
 html #back-to-top {
-  @apply opacity-0 pointer-events-none;
+  @apply opacity-0 pointer-events-none invisible;
 }
 
 html.scrolled #back-to-top {
-  @apply opacity-100 pointer-events-auto;
+  @apply opacity-100 pointer-events-auto visible;
 }

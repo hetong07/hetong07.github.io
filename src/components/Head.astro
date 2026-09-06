@@ -20,7 +20,7 @@ interface Props {
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = "/astro-nano.png" } = Astro.props;
+const { title, description, image = "/og.png" } = Astro.props;
 ---
 
 <!-- Global Metadata -->
@@ -91,19 +91,24 @@ const { title, description, image = "/astro-nano.png" } = Astro.props;
     lightThemeButton?.addEventListener("click", () => {
       localStorage.setItem("theme", "light");
       toggleTheme(false);
+      syncThemeButtons();
     });
 
     const darkThemeButton = document.getElementById("dark-theme-button");
     darkThemeButton?.addEventListener("click", () => {
       localStorage.setItem("theme", "dark");
       toggleTheme(true);
+      syncThemeButtons();
     });
 
     const systemThemeButton = document.getElementById("system-theme-button");
     systemThemeButton?.addEventListener("click", () => {
       localStorage.setItem("theme", "system");
       toggleTheme(window.matchMedia("(prefers-color-scheme: dark)").matches);
+      syncThemeButtons();
     });
+
+    syncThemeButtons();
 
     // Register the system-theme listener only once, even though init()
     // runs again after every view transition (astro:after-swap).
@@ -119,6 +124,19 @@ const { title, description, image = "/astro-nano.png" } = Astro.props;
     }
 
     document.addEventListener("scroll", onScroll);
+  }
+
+  function syncThemeButtons() {
+    const theme = localStorage.theme || "system";
+    const map = {
+      light: "light-theme-button",
+      dark: "dark-theme-button",
+      system: "system-theme-button",
+    };
+    for (const key in map) {
+      const el = document.getElementById(map[key]);
+      if (el) el.setAttribute("aria-pressed", String(theme === key));
+    }
   }
 
   function animate() {

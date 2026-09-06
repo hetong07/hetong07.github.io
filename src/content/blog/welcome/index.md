@@ -1,27 +1,17 @@
 ---
-title: "Welcome to my blog"
-description: "A first post — what this site is and what I plan to write about."
+title: "Welcome"
+description: "Why I built this site, and what I plan to write about here."
 date: "Sep 06 2026"
 ---
 
-Hello, and welcome! This is the first post on my new personal site.
+Hello, and welcome. This is the first post on my new site — a small home of
+my own on the web.
 
-I built this space to have a home of my own on the web — somewhere to write in
-long form, share what I'm working on, and keep notes that might be useful to
-others (and to future me).
+I spend my days building distributed systems: the infrastructure behind
+large-scale ML training, streaming data processing, and the runtimes that tie
+thousands of machines together. This is where I plan to write about that work —
+the ideas I find interesting, the problems that turn out to be harder than they
+look, and whatever I happen to be learning along the way.
 
-## What I'll write about
-
-<!-- TODO: replace with your actual topics -->
-
-- Things I'm building
-- What I'm learning
-- The occasional deeper dive on a problem I found interesting
-
-## Why a blog
-
-Short-form platforms come and go, but a site I own sticks around. Posts here are
-plain Markdown files in a Git repository, so the writing is portable and
-versioned — it's mine, and it'll outlast any single platform.
-
-More soon. Thanks for reading.
+I'm keeping it simple to start: plain Markdown, version-controlled, no
+platform to outlive. More soon.
