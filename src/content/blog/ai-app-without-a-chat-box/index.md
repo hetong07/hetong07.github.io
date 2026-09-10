@@ -35,7 +35,14 @@ We spent the next several weeks building our own answer to that question.
 
 The first thing we wanted to fix was the lack of visual context. If the assistant was talking about a museum, a restaurant, or a hotel, we wanted to see it. A single photo can tell you more about the atmosphere than three sentences ever could.
 
-![A ChatGPT voice-mode reply filling the screen with a long wall of text about a Roman piazza.](./chatgpt-wall-of-words.png)
+<figure style="max-width:300px;margin-inline:auto;">
+  <img
+    src="/chatgpt-wall-of-words.webp"
+    alt="A ChatGPT voice-mode reply filling the screen with a long wall of text about a Roman piazza."
+    style="width:100%;border-radius:8px;"
+    loading="lazy"
+  />
+</figure>
 
 Simply showing images didn't work. After a few recommendations, the screen became a wall of photos. We couldn't tell which image belonged to which place, or whether the assistant was still talking about something we'd already scrolled past. We realized visual information needed structure too.
 
