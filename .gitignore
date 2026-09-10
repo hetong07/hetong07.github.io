@@ -23,3 +23,6 @@ pnpm-debug.log*
 
 # source documents (not published)
 *.docx
+
+# personal notes (not published)
+HN.md
