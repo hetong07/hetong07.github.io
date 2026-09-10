@@ -4,21 +4,6 @@ description: "What planning a trip to Rome taught us about replacing the chat tr
 date: "Sep 09 2026"
 ---
 
-<figure>
-  <div style="position:relative;width:100%;aspect-ratio:16/9;border-radius:8px;overflow:hidden;">
-    <iframe
-      src="https://www.youtube.com/embed/SN5n4AC3xsU"
-      title="Teaser demo — Project Echo, Rome travel example"
-      style="position:absolute;inset:0;width:100%;height:100%;border:0;"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen
-      loading="lazy"
-    ></iframe>
-  </div>
-  <figcaption>Teaser demo (Rome)</figcaption>
-</figure>
-
 My wife and I were lying on the sofa one Friday evening, planning a trip back to Rome nearly ten years after our last visit. We were both excited, but after a long week neither of us wanted to open a laptop. Even typing on a phone felt like work, so we opened ChatGPT's live voice mode instead.
 
 For the first few minutes, it felt almost magical. We asked about neighborhoods, restaurants, and places worth visiting, and it answered naturally. Then we asked for restaurant recommendations.
