@@ -4,10 +4,20 @@ description: "What planning a trip to Rome taught us about replacing the chat tr
 date: "Sep 09 2026"
 ---
 
-<!-- TODO: replace this placeholder with the teaser video embed.
-     YouTube (unlisted): <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" title="Teaser demo (Rome)" frameborder="0" allowfullscreen></iframe>
-     Or self-hosted: <video controls src="./teaser-demo.mp4"></video> -->
-> 🎥 **Teaser demo (Rome)** — _video coming soon._
+<figure>
+  <div style="position:relative;width:100%;aspect-ratio:16/9;border-radius:8px;overflow:hidden;">
+    <iframe
+      src="https://www.youtube.com/embed/SN5n4AC3xsU"
+      title="Teaser demo — Project Echo, Rome travel example"
+      style="position:absolute;inset:0;width:100%;height:100%;border:0;"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+      loading="lazy"
+    ></iframe>
+  </div>
+  <figcaption>Teaser demo (Rome)</figcaption>
+</figure>
 
 My husband and I were lying on the sofa one Friday evening, planning a trip back to Rome nearly ten years after our last visit. We were both excited, but after a long week neither of us wanted to open a laptop. Even typing on a phone felt like work, so we opened ChatGPT's live voice mode instead.
 
@@ -59,11 +69,53 @@ Then the market moved.
 
 In the two months after we returned from Rome, ChatGPT, Perplexity, and Sesame all released major updates. They started showing richer visual content during conversations: maps, restaurant cards, images, links, citations, and structured search results. The direction felt immediately familiar. The industry was moving toward the same realization we had reached on our sofa: conversation alone isn't always the best representation of an answer.
 
-<!-- TODO: replace with the three side-by-side demo videos (YouTube unlisted or self-hosted <video>). -->
-> 🎥 **Side-by-side demos (Rome)** — _videos coming soon:_
-> - ChatGPT Live (Rome)
-> - Sesame (Rome)
-> - Perplexity Live (Rome)
+<figure>
+  <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;align-items:flex-start;">
+    <div style="flex:1 1 180px;max-width:220px;">
+      <div style="position:relative;width:100%;aspect-ratio:9/16;border-radius:8px;overflow:hidden;">
+        <iframe
+          src="https://www.youtube.com/embed/YKz2HfJbsEw"
+          title="ChatGPT Live (Rome)"
+          style="position:absolute;inset:0;width:100%;height:100%;border:0;"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div style="text-align:center;font-size:0.9em;margin-top:6px;">ChatGPT Live</div>
+    </div>
+    <div style="flex:1 1 180px;max-width:220px;">
+      <div style="position:relative;width:100%;aspect-ratio:9/16;border-radius:8px;overflow:hidden;">
+        <iframe
+          src="https://www.youtube.com/embed/vm1zmaSBiGQ"
+          title="Sesame (Rome)"
+          style="position:absolute;inset:0;width:100%;height:100%;border:0;"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div style="text-align:center;font-size:0.9em;margin-top:6px;">Sesame</div>
+    </div>
+    <div style="flex:1 1 180px;max-width:220px;">
+      <div style="position:relative;width:100%;aspect-ratio:9/16;border-radius:8px;overflow:hidden;">
+        <iframe
+          src="https://www.youtube.com/embed/2DX6p-MriLg"
+          title="Perplexity Live (Rome)"
+          style="position:absolute;inset:0;width:100%;height:100%;border:0;"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div style="text-align:center;font-size:0.9em;margin-top:6px;">Perplexity Live</div>
+    </div>
+  </div>
+  <figcaption>Side-by-side demos (Rome)</figcaption>
+</figure>
 
 Watching them side by side, what stood out wasn't the differences—it was the convergence. Every assistant had become more visual. Rich content was no longer an afterthought. Maps, cards, images, and search results had become a natural part of the conversation.
 
