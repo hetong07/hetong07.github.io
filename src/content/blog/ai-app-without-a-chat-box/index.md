@@ -4,6 +4,22 @@ description: "What planning a trip to Rome taught us about replacing the chat tr
 date: "Sep 09 2026"
 ---
 
+_By Tong He, [Xiaojuan Wang](https://jeanne-wang.github.io/), and ChatGPT_
+
+<figure>
+  <div style="position:relative;width:100%;aspect-ratio:16/9;border-radius:8px;overflow:hidden;">
+    <iframe
+      src="https://www.youtube.com/embed/SN5n4AC3xsU"
+      title="Teaser demo — Project Echo, Rome travel example"
+      style="position:absolute;inset:0;width:100%;height:100%;border:0;"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+      loading="lazy"
+    ></iframe>
+  </div>
+</figure>
+
 My wife and I were lying on the sofa one Friday evening, planning a trip back to Rome nearly ten years after our last visit. We were both excited, but after a long week neither of us wanted to open a laptop. Even typing on a phone felt like work, so we opened ChatGPT's live voice mode instead.
 
 For the first few minutes, it felt almost magical. We asked about neighborhoods, restaurants, and places worth visiting, and it answered naturally. Then we asked for restaurant recommendations.
@@ -106,7 +122,6 @@ In the two months after we returned from Rome, ChatGPT, Perplexity, and Sesame a
       <div style="text-align:center;font-size:0.9em;margin-top:6px;">Perplexity Live</div>
     </div>
   </div>
-  <figcaption>Side-by-side demos (Rome)</figcaption>
 </figure>
 
 Watching them side by side, what stood out wasn't the differences—it was the convergence. Every assistant had become more visual. Rich content was no longer an afterthought. Maps, cards, images, and search results had become a natural part of the conversation.
