@@ -1,7 +1,7 @@
 ---
 title: "We Built an AI App Without a Chat Box"
 description: "What planning a trip to Rome taught us about replacing the chat transcript with an interactive workspace — and why the industry is converging on the same idea."
-date: "Sep 09 2026"
+date: "2026-09-09T22:55:00-07:00"
 ---
 
 _By Tong He, [Xiaojuan Wang](https://jeanne-wang.github.io/), and ChatGPT_

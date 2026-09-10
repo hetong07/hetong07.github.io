@@ -1,17 +1,26 @@
 ---
 interface Props {
   date: Date;
+  time?: boolean;
 }
 
-const { date } = Astro.props;
+const { date, time = false } = Astro.props;
+
+const dateStr = date.toLocaleDateString("en-us", {
+  month: "short",
+  day: "numeric",
+  year: "numeric",
+  timeZone: "America/Los_Angeles",
+});
+
+const timeStr = date.toLocaleTimeString("en-us", {
+  hour: "numeric",
+  minute: "2-digit",
+  timeZone: "America/Los_Angeles",
+  timeZoneName: "short",
+});
 ---
 
 <time datetime={date.toISOString()}>
-  {
-    date.toLocaleDateString("en-us", {
-      month: "short",
-      day: "numeric",
-      year: "numeric",
-    })
-  }
+  {time ? `${dateStr}, ${timeStr}` : dateStr}
 </time>
