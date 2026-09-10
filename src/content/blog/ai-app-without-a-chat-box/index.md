@@ -19,7 +19,7 @@ date: "Sep 09 2026"
   <figcaption>Teaser demo (Rome)</figcaption>
 </figure>
 
-My husband and I were lying on the sofa one Friday evening, planning a trip back to Rome nearly ten years after our last visit. We were both excited, but after a long week neither of us wanted to open a laptop. Even typing on a phone felt like work, so we opened ChatGPT's live voice mode instead.
+My wife and I were lying on the sofa one Friday evening, planning a trip back to Rome nearly ten years after our last visit. We were both excited, but after a long week neither of us wanted to open a laptop. Even typing on a phone felt like work, so we opened ChatGPT's live voice mode instead.
 
 For the first few minutes, it felt almost magical. We asked about neighborhoods, restaurants, and places worth visiting, and it answered naturally. Then we asked for restaurant recommendations.
 
